@@ -13,7 +13,8 @@ class TaskController extends Controller
      */
     public function index()
     {
-       return TaskResource::collection(Task::all());
+    //    return TaskResource::collection(Task::all());
+    return Task::all();
 
         // $tasks = Task::all();
         // return new TaskResource($tasks);
