@@ -11,9 +11,9 @@ class DeleteTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function deleteTest(): void
     {
-        $response = $this->get('/');
+        $response = $this->delete('/api/tasks/1');
 
         $response->assertStatus(200);
     }
