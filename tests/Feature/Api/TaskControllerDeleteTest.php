@@ -30,7 +30,7 @@ class TaskControllerDeleteTest extends TestCase
     }
     public function test_delete_endpoint_fails_if_task_does_not_exist()
     {
-        $response = $this->deleteJson("/api/tasks/{111111111111}");
+        $response = $this->deleteJson("/api/tasks/111111111111");
         $response->assertStatus(404);
     }
     public function test_delete_endpoint_deletes_the_correct_task()
